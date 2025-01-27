@@ -45,6 +45,12 @@ def shopping_cart():
 
     print(f"The total cost: {total_cost}")  # Display the total coast of the items.
 
+    if total_cost > 100:
+        discount = total_cost * 0.1
+        total_cost -= discount
+        print(f"\nYou saved ${discount:.2f} with a 10% discount!")
+        print(f"Discounted Total: ${total_cost:.2f}")
+
 ####################################
 
 
