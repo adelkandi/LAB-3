@@ -25,7 +25,7 @@ def shopping_cart():
             for i in range(3):
                 item_name = input("What is the name of this item: ")
                 name.append(item_name)
-                item_price = int(input(f'What is the price of  the item {name[i]}: '))
+                item_price = float(input(f'What is the price of  the item {name[i]}: '))
                 price.append(item_price)
                 item_quantity = int(input(f"What is the quantity other item {name[i]}: "))
                 quantity.append(item_quantity)
