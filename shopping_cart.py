@@ -34,18 +34,19 @@ def shopping_cart():
             print("Please give a digit number as 1 2 3 Try again")  # if the user enters wrong data it will show him this message
 
     # Step 2: Calculate the total coast of the items
-    total_coast = 0 # initialize the coast to value = 0
+    total_cost = 0 # initialize the coast to value = 0
 
     # Print the items with their prices in order:
     for i in range (len(price)):
-        print(f"Item {name[i]}  coast : {price[i] * quantity[i]}")
+        print(f"Item {name[i]}  cost : {price[i] * quantity[i]}")
 
     for i in range(len(price)):
-        total_coast = price[i]*quantity[i] + total_coast
+        total_cost = price[i]*quantity[i] + total_cost
 
-    print(f"The total coast: {total_coast}")  # Display the total coast of the items.
+    print(f"The total cost: {total_cost}")  # Display the total coast of the items.
 
 ####################################
+
 
 shopping_cart() # Run the program for the first time
 
@@ -62,6 +63,5 @@ while True:
     else:
         print("Thank you for shopping with us!")
         break
-
 
 
