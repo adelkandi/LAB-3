@@ -47,6 +47,8 @@ def shopping_cart():
 
 ####################################
 
+shopping_cart() # Run the program for the first time
+
 while True:
 
     # Main variables : name of the item, price and quantity
@@ -54,13 +56,12 @@ while True:
     #name = []
     #quantity =[]
 
-    shopping_cart() # Run the program for the first time
-
     restart = input("\nWould you like to shop again? (yes/no): ").lower()
     if restart == "yes":
         shopping_cart()
     else:
         print("Thank you for shopping with us!")
         break
+
 
 
